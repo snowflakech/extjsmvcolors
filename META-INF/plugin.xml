@@ -1,0 +1,59 @@
+<!--
+  ~ Copyright 2013 snowflake productions GmbH
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<idea-plugin version="2">
+  <name>ExtJsMVColors</name>
+  <description><![CDATA[
+  Ext Js MVColors eases the work with Ext Js files by labeling tabs of open MVC files
+  from their actual content (the defined namespace or alias).
+  Additional specific file icons and tab background colors are set for
+  model (red), view (green) and controller (yellow) files.
+  <br/><br/>
+  Please note: This plugin is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ]]></description>
+  <vendor url="" email="kstenschke@snowflake.ch">snowflake productions GmbH</vendor>
+  <version>1.0.0</version>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="8000"/>
+
+    <change-notes><![CDATA[
+    1.0.0<br/>
+    <ul><li>Initial release</li></ul>
+  ]]></change-notes>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+      <component>
+          <implementation-class>com.sfp.extJsMVColors.FileOpenedProjectComponent</implementation-class>
+      </component>
+  </project-components>
+
+  <actions>
+  </actions>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <editorTabTitleProvider implementation="com.sfp.extJsMVColors.FileTabTitleProvider"/>
+        <editorTabColorProvider implementation="com.sfp.extJsMVColors.FileTabColorProvider"/>
+        <iconProvider implementation="com.sfp.extJsMVColors.FileIconProvider"/>
+    </extensions>
+
+    <depends>com.intellij.modules.lang</depends>
+</idea-plugin>
