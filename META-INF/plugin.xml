@@ -24,7 +24,7 @@
   <br/><br/>
   Please note: This plugin is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ]]></description>
-  <vendor url="" email="kstenschke@snowflake.ch">snowflake productions GmbH</vendor>
+  <vendor url="http://www.snowflake.ch/" email="kstenschke@snowflake.ch">snowflake productions GmbH</vendor>
   <version>1.0.0</version>
 
   <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
