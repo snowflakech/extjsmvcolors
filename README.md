@@ -5,6 +5,8 @@ from their actual content (the defined namespace or alias).
 Additional, specific file icons and tab background colors are set for 
 model (red), view (green) and controller (yellow) files.
 
+See also: http://plugins.intellij.net/plugin?pr=&pluginId=7165
+
 
 Please note: This plugin is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
